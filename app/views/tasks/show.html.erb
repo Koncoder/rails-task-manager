@@ -1,0 +1,10 @@
+<div class="detail_view">
+
+  <div class="card"><h3><%= @task.title %></h3></div>
+  <div class="card"><h6 class="no_margin"><%= @task.details %></h6></div>
+
+  <%= link_to "Back to list", tasks_path, class: "btn btn-info"%>
+  <%= link_to "Edit", task_edit_path, class: "btn btn-info" %>
+  <%= link_to "Delete", task_delete_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-info" %>
+
+</div>
